@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('dumble4.jpg');
+            background-repeat: no-repeat;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        #top {
+            display: flex;
+            justify-content: center;
+            background: -webkit-linear-gradient(#b40000, #ff7300, rgb(240, 213, 108), white, rgb(1, 121, 158));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 61px;
+            margin-left: 10%;
+            margin-top: 2%;
+            padding: 25px 5px;
+            text-shadow: 2px 2px 4px rgb(162, 99, 239), 2px 2px 4px rgb(40, 40, 41);
+        }
+
+        #image {
+            margin-left: -30%;
+        }
+
+        #maincontent {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            margin-bottom: 12%;
+            transition: all 150s ease-in-out;
+        }
+
+        #maincontent:hover{
+            transform:scale('2');
+        }
+
+        .box {
+            margin-top: 5px;
+            margin-left: 20%;
+            border-radius: 15px 0px;
+            width: 265px;
+            height: 35px;
+        }
+
+        #submit {
+            width: 105px;
+        }
+
+        #login {
+            margin-top: -29px;
+            text-decoration: none;
+            padding-left: 136px;
+            font-size: medium;
+            color: rgb(10, 249, 26);
+            font-weight: bolder;
+            text-shadow: 5px 5px 10px rgb(33, 83, 7);
+        }
+
+        #checkbox {
+            margin-left: -60%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .last {
+            padding: 0px 15px;
+            text-decoration: none;
+            color: rgb(10, 249, 26);
+        }
+
+        .last:hover{
+            background-color: antiquewhite;
+            color: blue;
+            border-radius: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jfif" alt="#" style="filter: invert();" id="image">
+        <div id="top"><b>TR_FITNESS centre</b></div>
+    </header>
+    <!-- <hr> -->
+    <form id="maincontent">
+        <input type="text" placeholder="Your Name" class="box">
+        <input type="email" placeholder="example@mail" class="box">
+        <input type="tel" placeholder="Phone number" class="box">
+        <input type="text" placeholder="Address" class="box">
+        <input type="submit" class="box" id="submit">
+        <a href="#" class="box" id="login">Login...</a>
+    </form>
+    <hr>
+    <footer>
+        <a href="#" class="last">About us..</a>
+        <a href="#" class="last">Term and conditions</a>
+        <a href="#" class="last">Contact us..</a>
+    </footer>
+</body>
+
+</html>
